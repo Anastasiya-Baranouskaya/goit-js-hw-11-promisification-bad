@@ -1,14 +1,14 @@
 // task 1
-// const delay = (ms) => {
-//   return new Promise((resolve) => {
-//     setTimeout(() => resolve(ms), ms);
-//   });
-// };
+const delay = (ms) => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(ms), ms);
+  });
+};
 
-// // Вызовы функции для проверки
-// delay(2000).then((ms) => console.log(`Resolved after ${ms}`)); // Resolved after 2000ms
-// delay(1000).then((ms) => console.log(`Resolved after ${ms}`)); // Resolved after 1000ms
-// delay(1500).then((ms) => console.log(`Resolved after ${ms}`)); // Resolved after 1500ms
+// Вызовы функции для проверки
+delay(2000).then((ms) => console.log(`Resolved after ${ms}`)); // Resolved after 2000ms
+delay(1000).then((ms) => console.log(`Resolved after ${ms}`)); // Resolved after 1000ms
+delay(1500).then((ms) => console.log(`Resolved after ${ms}`)); // Resolved after 1500ms
 
 // =======  task 2  ======
 // const users = [
@@ -46,13 +46,13 @@
 
 // const logger = (updatedUsers) => console.table(updatedUsers);
 
-// /*
-//  * Должно работать так
-//  */
+// // /*
+// //  * Должно работать так
+// //  */
 // toggleUserState(users, "Mango").then(logger);
 // toggleUserState(users, "Lux").then(logger);
 
-// === task 3 =====
+// // === task 3 =====
 
 // const randomIntegerFromInterval = (min, max) => {
 //   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -82,8 +82,8 @@
 //   console.warn(`Error processing transaction ${id}. Please try again later.`);
 // };
 
-// // //  * Должно работать так
-// //  */
+// // // //  * Должно работать так
+// // //  */
 // makeTransaction({ id: 70, amount: 150 }).then(logSuccess).catch(logError);
 
 // makeTransaction({ id: 71, amount: 230 }).then(logSuccess).catch(logError);
